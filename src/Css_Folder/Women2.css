@@ -1,0 +1,117 @@
+/* Container */
+.women-empowerment-container {
+    width: 100%;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Reduced height for a smaller look */
+    background-color: #f5d7e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%); /* Slightly less dark for better balance */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem; /* Reduced size */
+    margin-bottom: 8px; /* Reduced margin */
+  }
+  
+  .hero-text p {
+    font-size: 1rem; /* Reduced size */
+    width: 70%; /* More compact for smaller layouts */
+    margin: 0 auto;
+  }
+  
+  /* Focus Points Section */
+  .focus-cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Reduced card size */
+    gap: 15px; /* Reduced gap between cards */
+    padding: 20px 15px; /* Reduced padding */
+    background-color: #f9f9f9;
+  }
+  
+  .focus-card {
+    background-color: #fff;
+    border-radius: 8px; /* Slightly smaller border-radius */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08); /* Lighter shadow */
+    padding: 15px; /* Reduced padding */
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .focus-card:hover {
+    transform: translateY(-8px); /* Reduced hover effect */
+  }
+  
+  .focus-icon {
+    width: 50px; /* Smaller icon size */
+    height: auto;
+    margin-bottom: 12px; /* Reduced margin */
+  }
+  
+  .focus-card h3 {
+    font-size: 1.3rem; /* Reduced heading size */
+    color: #333;
+    margin-bottom: 8px; /* Reduced margin */
+  }
+  
+  .focus-card p {
+    font-size: 0.9rem; /* Reduced paragraph size */
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .hero-section {
+      height: 40vh; /* Further reduce the hero section height for mobile */
+    }
+  
+    .hero-text h1 {
+      font-size: 1.6rem; /* Smaller font for mobile */
+    }
+  
+    .hero-text p {
+      font-size: 0.9rem; /* Smaller paragraph text */
+      width: 80%; /* More compact text box */
+    }
+  
+    .focus-cards-section {
+      grid-template-columns: 1fr; /* Single column for small screens */
+    }
+  
+    .focus-card {
+      padding: 12px; /* Compact card padding on mobile */
+    }
+  
+    .focus-card h3 {
+      font-size: 1.2rem; /* Smaller heading size */
+    }
+  
+    .focus-card p {
+      font-size: 0.85rem; /* Smaller paragraph size */
+    }
+  }
+  
