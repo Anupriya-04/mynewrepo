@@ -19,7 +19,7 @@ const Healthcare = () => {
           alt="Healthcare Background"
           className="health-image"
         />
-        <div className="Women-text">
+        <div className="health-text">
           <div className="health-title">HEALTH CARE</div>
           <div className="health-subtitle">Caring for Health, Empowering Lives</div>
         </div>

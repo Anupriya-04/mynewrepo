@@ -192,6 +192,9 @@
     .livelihood-title {
       font-size: 2rem;
     }
+    .livelihood-image {
+      height: 190px;
+    }
   
     .livelihood-subtitle {
       font-size: 1.2rem;

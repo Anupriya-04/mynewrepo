@@ -111,15 +111,15 @@ focus-cards-container {
 
   .Women-text {
     width: 85%;
-    top: 20%; /* Adjust text placement */
+    top: 25%; /* Adjust text placement */
     padding: 0 5px;
   }
 
   .Women-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .Women-subtitle {
-    font-size: 1.2rem;
+    font-size: 0.5rem;
   }
 }

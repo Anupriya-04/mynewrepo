@@ -8,36 +8,46 @@ import d3 from '../../image/d3.png';
 import d4 from '../../image/d4.png';
 import d5 from '../../image/d5.png';
 import p3 from '../../image/p3.jpg';
-
+// Import the external CSS file
+import '../../Css_Folder/Aboutus.css';
 const Aboutus = () => {
   const images = [d1, d2, d3, d4, d5];
-  
+
   return (
     <div>
+      {/* About Us Section */}
       <div style={{ position: 'relative', textAlign: 'center' }}>
         <img
           src={p3}
           alt='About Us'
-          style={{ height: '550px', width: '100%', objectFit: 'cover' }}
+         
+          className="about-img"
         />
-        <div
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            color: 'white',
-            fontWeight: 'bold',
-            fontSize: '2.5rem',
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            padding: '10px',
-            borderRadius: '10px',
-            textAlign: 'center',
-            width: '80%', // Ensure text doesn't overflow on smaller screens
-          }}
-        >
-          SRPM Aspire & Welfare Society
-        </div>
+     <div
+  style={{
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 'clamp(1rem, 3vw, 1.8rem)', // Adjusted font size for better fit
+    backgroundColor: 'rgba(0, 0, 0, 0.6)', // Semi-transparent background for better text readability
+    padding: '8px 16px', // Adjusted padding
+    borderRadius: '10px', // Rounded corners
+    textAlign: 'center',
+    width: '100%', // Full width
+    maxWidth: '100%', // Ensure it doesn't exceed the container's width
+    boxSizing: 'border-box', // Ensure padding is included in width
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)', // Added shadow for depth
+    zIndex: 10, // Ensure the text appears above the image
+    whiteSpace: 'nowrap', // Prevent text from wrapping
+    overflow: 'hidden', // Hide overflow
+    textOverflow: 'ellipsis' // Add ellipsis if the text overflows
+  }}
+>
+  SRPM Aspire Education & Welfare Society
+</div>
 
         <div style={{ marginTop: '20px' }}>
           <h1 style={{
@@ -50,23 +60,9 @@ const Aboutus = () => {
             OUR MISSION
           </h1>
         </div>
-
-        <style>
-          {`
-            @keyframes fadeInSlideUp {
-              0% {
-                opacity: 0;
-                transform: translateY(20px);
-              }
-              100% {
-                opacity: 1;
-                transform: translateY(0);
-              }
-            }
-          `}
-        </style>
       </div>
 
+      {/* Mission Section */}
       <div style={{
         backgroundColor: '#add8e6',
         padding: '50px',
@@ -79,6 +75,7 @@ const Aboutus = () => {
         </p>
       </div>
 
+      {/* Key Areas Section */}
       <div style={{ textAlign: 'center', padding: '20px', marginTop: '50px' }}>
         <h1 style={{
           fontWeight: 'bold',
@@ -109,11 +106,10 @@ const Aboutus = () => {
           <PiArrowsInCardinalBold /> Handicraft Training Program.<br /><br />
           <PiArrowsInCardinalBold /> Agarbatti And Dhoopbatti Making Livelihood Program.<br /><br />
           <PiArrowsInCardinalBold /> Employment & Self-employment Training Program For Bhopal Gas Victims.<br /><br />
-         
-          
         </p>
       </div>
 
+      {/* Vision Section */}
       <div style={{ textAlign: 'center', padding: '20px', marginTop: '50px' }}>
         <h1 style={{
           fontWeight: 'bold',
@@ -126,36 +122,32 @@ const Aboutus = () => {
         </p>
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', flexWrap: 'wrap', margin: '40px 0' }}>
+      {/* Images Section */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', flexWrap: 'wrap', margin: '40px 0' }} className="key-areas-images">
         {images.map((image, index) => (
           <React.Fragment key={index}>
             <img
               src={image}
               alt={`d${index + 1}`}
-              style={{
-                width: '200px',
-                height: '200px',
-                borderRadius: '50%',
-                objectFit: 'cover',
-                boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
-                margin: '10px',
-              }}
+              
             />
             {index < images.length - 1 && (
               <img
                 src={a1}
                 alt="Arrow"
                 style={{
-                  width: '30px',
+                  width: '10px',
                   height: 'auto',
                   marginLeft: '10px',
                 }}
+                className="key-areas-arrow"
               />
             )}
           </React.Fragment>
         ))}
       </div>
 
+      {/* History Section */}
       <div style={{
         backgroundColor: '#ECFFDC',
         padding: '50px',
@@ -179,6 +171,6 @@ const Aboutus = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Aboutus
+export default Aboutus;

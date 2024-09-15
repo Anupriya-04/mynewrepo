@@ -99,16 +99,16 @@ focus-cards-container {
 
 @media (max-width: 440px) {
   .health-section {
-    min-height: 400px; /* Ensure minimum height on small devices */
+    min-height: auto; /* Ensure minimum height on small devices */
   }
 
   .health-image {
-    height: 400px; /* Reduce height for smaller devices */
+    height: 200px; /* Reduce height for smaller devices */
   }
 
   .health-text {
     width: 85%;
-    top: 60%; /* Adjust text placement */
+    /* Adjust text placement */
     padding: 0 5px;
   }
 

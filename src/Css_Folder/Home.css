@@ -214,7 +214,7 @@ html, body {
     }
   
     .slider21-image {
-      height: 40vh; /* Adjust the height for smaller screens */
+      height: auto; /* Adjust the height for smaller screens */
     }
   
     .story21-details h3 {
@@ -246,7 +246,7 @@ html, body {
   /* Mobile Specific Styles */
   @media (max-width: 576px) {
     .slider21-image {
-      height: 35vh; /* Further adjust for mobile screens */
+      height: 25vh; /* Further adjust for mobile screens */
     }
   
     .content21-section {
